@@ -1,0 +1,121 @@
+.dmdisp-payment-form-preview {
+	
+}
+
+.emep_stripe_elements_form .emep-payment-form {
+	margin: 30px 0;
+}
+
+.emep_stripe_elements_form .submit-payment {
+	display: inline-block;
+}
+
+.emep_stripe_elements_form .submit-payment:hover {
+	cursor: pointer;
+}
+
+.emep_stripe_elements_form .form-row {
+	margin-bottom: 30px;
+}
+
+.emep_stripe_elements_form .emep-payment-form-input,
+.emep_stripe_elements_form .StripeElement {
+	box-sizing: border-box;
+	height: 40px;
+	padding: 10px 12px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	background-color: white;
+	box-shadow: 0 1px 3px 0 #e6ebf1;
+	-webkit-transition: box-shadow 150ms ease;
+	transition: box-shadow 150ms ease;
+	width: 100%;
+	color: #32325d;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.emep_stripe_elements_form .emep-payment-form-input::placeholder {
+	color: #aab7c4;
+}
+
+.emep_stripe_elements_form .emep-payment-form-input.is-required {
+	background-color: red;
+	color: #fff;
+}
+
+.emep_stripe_elements_form .emep-payment-form-input.is-required::placeholder {
+	color: #fff;
+}
+
+.emep_stripe_elements_form label {
+	margin-bottom: 5px;
+	display: block;
+}
+
+.emep_stripe_elements_form .StripeElement--focus {
+	box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.emep_stripe_elements_form .StripeElement--invalid {
+	border-color: #fa755a;
+}
+
+.emep_stripe_elements_form .StripeElement--webkit-autofill {
+	background-color: #fefde5 !important;
+}
+
+.emep_stripe_elements_form .submit-payment .payment-form-spinner {
+	display: none;
+}
+
+.emep_stripe_elements_form form.processing .submit-payment {
+	opacity: .6;
+}
+
+.emep_stripe_elements_form form.processing .submit-payment:hover {
+	cursor: default;
+}
+
+.emep_stripe_elements_form form.processing .submit-payment .payment-form-spinner {
+	display: inline-block;
+}
+
+.payment-form-spinner,
+.payment-form-spinner:after {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+.payment-form-spinner {
+	margin: 0 auto;
+	font-size: 10px;
+	position: relative;
+	text-indent: -9999em;
+	border-top: 1px solid rgba(0, 0, 0, 1);
+	border-right: 1px solid rgba(0, 0, 0, 1);
+	border-bottom: 1px solid rgba(0, 0, 0, 1);
+	border-left: 1px solid #ffffff;
+	transform: translateZ(0);
+	animation: spinner 1.1s infinite linear;
+}
+@-webkit-keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
